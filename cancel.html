@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    
+    <title>Cancel Ticket</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        
+        .header {
+            background: orange;
+            /* Orange header color */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .top-nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .top-nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: orange;
+            font-weight: bold;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            background-color: orange;
+            /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+            /* Darker shade on hover */
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .train-image {
+            flex: 1;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        .train-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form-container {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+
+        .footer {
+            background: orange;
+            /* Orange footer color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .confirm-cancellation {
+            margin-top: 15px;
+        }
+
+        .top-nav {
+            text-align: center;
+            margin: 20px 0;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Cancel Ticket</h1>
+    </div>
+    <table>
+        <tr>
+            <th><a style="padding-right:10px " href="cancel.html">Cancel Ticket</a></th>
+            <th><a style="padding-right:10px " href="order-food.html">Order Food</a></th>
+            <th><a  style="padding-right:10px "href="pnr-status.html">PNR Status</a></th>
+            <th><a  style="padding-right:10px "href="latest-news.html">Latest News</a></th>
+            <th><a  style="padding-right:10px "href="cancelled-trains.html">Today's Cancelled Trains</a></th>
+            <th><a style="padding-right:10px " href="about.html">About</a></th>
+            <th><a style="padding-right:10px " href="transaction-status.html">Transaction Status</a></th>
+            <th><a style="padding-right:10px " href="contact.html">Contact</a></th>
+        </tr>
+
+    </table>
+
+
+    <div class="container">
+        <div class="train-image">
+            <img src="irctc.jpg" alt="Train Image">
+        </div>
+        <div class="form-container">
+            <form action="cancel-confirmation.html" method="post">
+                <h2>Cancel Your Ticket</h2>
+
+                <div class="form-group">
+                    <label for="pnr-number">PNR Number:</label>
+                    <input type="text" id="pnr-number" name="pnr-number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="refund-amount">Refund Amount:</label>
+                    <input type="number" id="refund-amount" name="refund-amount" required>
+                </div>
+
+                <div class="form-group confirm-cancellation">
+                    <label>
+                        <input type="checkbox" name="confirm-cancellation" required>
+                        Confirm Cancellation
+                    </label>
+                </div>
+
+                <input type="submit" value="Cancel Ticket">
+            </form>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Back to Index</a>
+
+    <div class="footer">
+        <p> 2024 IRCTC - All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

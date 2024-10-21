@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Transaction Status</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: orange; /* Orange header color */
+            color: #fff;
+            padding: 10px 0;
+        }
+        .top-nav {
+            margin: 20px 0;
+
+        }
+        .top-nav a {
+            margin: 0 15px;
+            color: orange;
+            font-weight: bold;
+        }
+
+        .back-button {
+            background-color: orange; /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+
+            margin: 20px 0;
+
+        }
+
+        .container {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            background: orange; /* Orange footer color */
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .top-nav {
+            margin: 20px 0;
+            background-color: orange;
+            padding: 10px;
+        }
+        
+        .top-nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Transaction Status</h1>
+    </div>
+    <table>
+        <tr>
+            <th><a style="padding-right:10px " href="cancel.html">Cancel Ticket</a></th>
+            <th><a style="padding-right:10px " href="order-food.html">Order Food</a></th>
+            <th><a  style="padding-right:10px "href="pnr-status.html">PNR Status</a></th>
+            <th><a  style="padding-right:10px "href="latest-news.html">Latest News</a></th>
+            <th><a  style="padding-right:10px "href="cancelled-trains.html">Today's Cancelled Trains</a></th>
+            <th><a style="padding-right:10px " href="about.html">About</a></th>
+            <th><a style="padding-right:10px " href="transaction-status.html">Transaction Status</a></th>
+            <th><a style="padding-right:10px " href="contact.html">Contact</a></th>
+        </tr>
+
+    </table>
+
+
+    <div class="container">
+        <h2>Your Transaction Status</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>PNR No.</th>
+                    <th>Passenger Names</th>
+                    <th>Amount (INR)</th>
+                    <th>Booking Date</th>
+                    <th>Transaction Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234567890</td>
+                    <td>John Doe, Jane Doe</td>
+                    <td>1500</td>
+                    <td>2024-09-01</td>
+                    <td>Money Requested</td>
+                </tr>
+                <tr>
+                    <td>0987654321</td>
+                    <td>Mike Smith</td>
+                    <td>2000</td>
+                    <td>2024-09-02</td>
+                    <td>Transaction Failed</td>
+                </tr>
+                <tr>
+                    <td>2345678901</td>
+                    <td>Alice Brown</td>
+                    <td>1800</td>
+                    <td>2024-09-03</td>
+                    <td>Confirmed</td>
+                </tr>
+                <tr>
+                    <td>3456789012</td>
+                    <td>Bob Johnson</td>
+                    <td>1200</td>
+                    <td>2024-09-04</td>
+                    <td>Cancelled</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <a href="index.html" class="back-button">Back to Index</a>
+
+    <div class="footer">
+        <p> 2024 IRCTC - All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

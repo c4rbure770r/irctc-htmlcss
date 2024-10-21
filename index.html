@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>IRCTC Railway Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>IRCTC Railway Booking</h1>
+    </div>
+
+    <table>
+        <tr>
+            <th><a style="padding-right:20px " href="cancel.html">Cancel Ticket</a></th>
+            <th><a style="padding-right:20px " href="order-food.html">Order Food</a></th>
+            <th><a  style="padding-right:20px "href="pnr-status.html">PNR Status</a></th>
+            <th><a  style="padding-right:20px "href="latest-news.html">Latest News</a></th>
+            <th><a  style="padding-right:20px "href="cancelled-trains.html">Today's Cancelled Trains</a></th>
+            <th><a style="padding-right:20px " href="about.html">About</a></th>
+            <th><a style="padding-right210px " href="transaction-status.html">Transaction Status</a></th>
+            <th><a style="padding-right:20px " href="contact.html">Contact</a></th>
+        </tr>
+
+    </table>
+
+    
+    <div class="container">
+        <div class="train-image">
+            <img src="irctc.jpg" alt="Train Image">
+        </div>
+
+        <div class="form-container">
+            <form action="book.html" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required><br><br>
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required><br><br>
+
+                <label for="date">Date of Travel:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <input type="submit" value="Book Ticket">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p> 2024 IRCTC - All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

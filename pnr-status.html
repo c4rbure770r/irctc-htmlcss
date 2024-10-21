@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>PNR Status Check</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: orange; /* Orange header color */
+            color: #fff;
+            padding: 10px 0;
+
+        }
+        .top-nav {
+            margin: 20px 0;
+
+        }
+        .top-nav a {
+            margin: 0 15px;
+            color:white;
+            font-weight: bold;
+        }
+
+        
+        .back-button {
+            background-color: orange; /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+        .train-image {
+
+            margin-right: 20px;
+        }
+        .train-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+        .footer {
+            background: orange; /* Orange footer color */
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>PNR Status Check</h1>
+    </div>
+
+    <table>
+        <tr>
+            <th><a style="padding-right:10px " href="cancel.html">Cancel Ticket</a></th>
+            <th><a style="padding-right:10px " href="order-food.html">Order Food</a></th>
+            <th><a  style="padding-right:10px "href="pnr-status.html">PNR Status</a></th>
+            <th><a  style="padding-right:10px "href="latest-news.html">Latest News</a></th>
+            <th><a  style="padding-right:10px "href="cancelled-trains.html">Today's Cancelled Trains</a></th>
+            <th><a style="padding-right:10px " href="about.html">About</a></th>
+            <th><a style="padding-right:10px " href="transaction-status.html">Transaction Status</a></th>
+            <th><a style="padding-right:10px " href="contact.html">Contact</a></th>
+        </tr>
+
+    </table>
+
+    <div class="container">
+        <div class="train-image">
+            <img src="irctc.jpg" alt="Train Image">
+        </div>
+        <div class="form-container">
+            <form action="status.html" method="post">
+                <h2>Check PNR Status</h2>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="check-method" value="pnr" required>
+                        Check by PNR Number
+                    </label>
+                    <label for="pnr-number">PNR Number:</label>
+                    <input type="text" id="pnr-number" name="pnr-number">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="check-method" value="details">
+                        Check by Name, Phone Number, and Train Number
+                    </label>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" name="phone">
+
+                    <label for="train-number">Train Number:</label>
+                    <input type="text" id="train-number" name="train-number">
+                </div>
+
+                <div class="form-group">
+                    <label for="captcha">Enter Captcha: 4 + 3 = ?</label>
+                    <input type="text" id="captcha" name="captcha" required>
+                </div>
+
+                <input type="submit" value="Check Status">
+            </form>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Back to Index</a>
+
+    <div class="footer">
+        <p> 2024 IRCTC - All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

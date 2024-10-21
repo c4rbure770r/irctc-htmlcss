@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: orange;
+    padding: 20px;
+}
+
+.top-nav {
+    margin: 20px 0;
+    background-color: orange;
+    padding: 10px;
+}
+
+.top-nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+.train-image img {
+    width: 400px;
+    height: 200px;
+}
+
+.form-container {
+    margin-left: 20px;
+    flex: 1;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="text"], input[type="password"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkorange;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
